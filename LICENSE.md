@@ -1,1 +1,0 @@
-# TypingMonkeyBot LICENSE
