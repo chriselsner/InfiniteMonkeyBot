@@ -5,6 +5,7 @@ from keys import *
 import tweepy
 import random
 import string
+import time
 
 
 # build the bot
