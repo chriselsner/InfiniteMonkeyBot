@@ -1,4 +1,4 @@
-# import Twitter API keys
+# import API keys
 from keys import *
 
 # import other libraries
@@ -13,7 +13,7 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 bot = tweepy.API(auth)
 
 # generate tweet
-chars = string.ascii_lowercase + " "
+chars = string.ascii_lowercase + " " + " " + " " + " " # 4 spaces = higher probability (the key is bigger)
 tweet = "".join(random.choice(chars) for i in range(280))
 
 # post tweet
