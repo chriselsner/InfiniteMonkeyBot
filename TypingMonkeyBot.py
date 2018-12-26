@@ -5,7 +5,6 @@ from keys import *
 import tweepy
 import random
 import string
-import sys
 
 
 # build the bot
@@ -21,4 +20,4 @@ CAHARACTERS = string.ascii_lowercase + " " + " " + " " + " " # 4 spaces = higher
 while True:
     tweet = "".join(random.choice(chars) for i in range(280))
     bot.update_status(tweet)
-    sys.sleep(INTERVAL)
+    time.sleep(INTERVAL)
