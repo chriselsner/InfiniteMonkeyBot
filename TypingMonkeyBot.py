@@ -14,10 +14,10 @@ bot = tweepy.API(auth)
 
 # constants
 INTERVAL = 60
-CAHARACTERS = string.ascii_lowercase + " " + " " + " " + " " # 4 spaces = higher probability (the key is bigger)
+CHARACTERS = string.ascii_lowercase + " " + " " + " " + " " # 4 spaces = higher probability (the key is bigger)
 
 # generate & post a tweet
 while True:
-    tweet = "".join(random.choice(chars) for i in range(280))
+    tweet = "".join(random.choice(CHARACTERS) for i in range(280))
     bot.update_status(tweet)
     time.sleep(INTERVAL)
