@@ -1,5 +1,14 @@
 # import API keys
-from keys import *
+
+# for local deployment
+# from keys import *
+
+# for Heroku deployment
+from os import environ
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_KEY_SECRET = environ['CONSUMER_KEY_SECRET']
+ACCESS_TOKEN = environ['ACCESS_TOKEN']
+ACCESS_TOKEN_SECRET = environ['ACCESS_TOKEN_SECRET']
 
 # import other libraries
 import tweepy
